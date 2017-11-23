@@ -8,6 +8,7 @@ $(document).ready(function() {
 
 function getQuote() {
     $.getJSON(quoteUrl, createTweet);
+    $(".trigger").click(getQuote());
 }
 
 function createTweet(input) {
