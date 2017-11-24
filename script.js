@@ -3,7 +3,7 @@ var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&fi
 
 $(document).ready(function() {
     getQuote();
-    $('.trigger').click(getQuote());
+    $('.trigger').click(getQuote);
 });
 function getQuote() {
     $.getJSON(quoteUrl, createTweet);
